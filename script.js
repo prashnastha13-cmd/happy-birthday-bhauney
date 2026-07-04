@@ -1,3 +1,9 @@
-document.querySelector("button").addEventListener("click", function () {
-    alert("❤️ I love you so much, Bhauney! ❤️\n\nHappy Birthday! 🎂🎉");
-});
+function openHeart() {
+    const gallery = document.getElementById("gallery");
+
+    gallery.style.display = "block";
+
+    gallery.scrollIntoView({
+        behavior: "smooth"
+    });
+}
