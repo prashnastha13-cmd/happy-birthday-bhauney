@@ -105,5 +105,24 @@ font-size:22px;
 line-height:1.8;
 animation:fadeIn 2s;
 }
+.heart{
+    position:fixed;
+    bottom:-50px;
+    font-size:25px;
+    animation:floatHeart 6s linear forwards;
+    pointer-events:none;
+    z-index:9999;
+}
 
+@keyframes floatHeart{
+    0%{
+        transform:translateY(0) scale(1);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh) scale(1.8);
+        opacity:0;
+    }
+}
 
