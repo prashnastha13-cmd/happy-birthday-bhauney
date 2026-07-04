@@ -72,3 +72,40 @@ button:hover{
         transform:translateY(0);
     }
 }
+#gallery{
+    display:none;
+    margin-top:40px;
+    padding:20px;
+    text-align:center;
+    animation:fadeIn 1s ease;
+}
+
+#gallery h2{
+    color:white;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+#gallery img{
+    width:90%;
+    max-width:350px;
+    margin:15px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    transition:.4s;
+}
+
+#gallery img:hover{
+    transform:scale(1.05);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
