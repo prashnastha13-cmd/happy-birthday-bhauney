@@ -68,3 +68,26 @@ function createHeart(){
     },6000);
 
 }
+function launchFireworks() {
+
+    for(let i=0;i<40;i++){
+
+        const fire=document.createElement("div");
+
+        fire.innerHTML="✨";
+
+        fire.style.position="fixed";
+        fire.style.left=Math.random()*100+"vw";
+        fire.style.top=Math.random()*100+"vh";
+        fire.style.fontSize=(20+Math.random()*30)+"px";
+        fire.style.pointerEvents="none";
+        fire.style.animation="explode 1.5s ease forwards";
+
+        document.body.appendChild(fire);
+
+        setTimeout(()=>{
+            fire.remove();
+        },1500);
+    }
+
+}
